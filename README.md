@@ -1,5 +1,5 @@
-== Escape!: The hotel search web app
-
+Escape!: The hotel search web app
+=================================
 What is this?
 -------------
 Welcome.
