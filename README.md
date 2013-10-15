@@ -1,9 +1,9 @@
-Escape!: The hotel search web app
+Escape! The hotel search web app
 =================================
 What is this?
 -------------
 Welcome.
-Escape! is a Rails 4.0.0 web application which consumes a JSON API in order to filter hotel results either by city or by the lowest-price rooms in the system. Whether you are planning a trip, just about to arrive in your destination city, or feeling spontaneous; this app is for you!
+Escape! is a Rails 4.0.0 web application which uses a JSON API of hotel data in order to filter hotel results either by city or by the lowest-price rooms in the system. Whether you are planning a trip, just about to arrive in your destination city, or feeling spontaneous; this app is for you!
 
 Set up:
 --------
