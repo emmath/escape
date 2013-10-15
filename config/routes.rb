@@ -1,4 +1,8 @@
 Escape::Application.routes.draw do
+  root to: "trips#index"
+  resources :trips
+
+  get "deals", to: "trips#deals"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -39,7 +43,7 @@ Escape::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

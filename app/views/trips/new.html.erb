@@ -1,0 +1,17 @@
+<body class="city">
+  <div id="newcity">
+    <h1>Where are you headed?</h1>
+
+    <%= form_for(@trip) do |f| %>
+
+    <div class="field">
+        <%= f.label :city, "City:" %>
+        <%= f.text_field :city %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Lets go!"%>
+      </div>
+    <% end %>
+  </div>
+</body>

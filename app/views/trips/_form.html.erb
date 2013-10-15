@@ -1,0 +1,11 @@
+<%= form_for(@trip) do |f| %>
+
+<div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Let's go!"%>
+  </div>
+<% end %>

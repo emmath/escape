@@ -1,0 +1,27 @@
+<body class="deals">
+
+ <div id="dealstitle">
+ <h1>Check it out!</h1>
+ <h2>These are the cheapest rooms around the world for tonight:</h2>
+</div>
+
+    <div id="dealsbody">
+     <% @price.each do |f| %>
+        <table>
+            <thead>
+            <tr>
+                <th></th>
+                <th><%= f["name"] %>, <%= f["longDestinationName"] %></th>
+            </tr>
+            </thead>
+                <td><img src="<%= f["imageUrl"] %>" height="100" width="100"></td>
+                <td><%= f["description"] %></td>
+            </tr>
+            <tr class="price">
+                <td></td>
+                <td>Price: $<%= f["pricePerNight"] %> each night!</td>
+            </tr>
+        </table>
+      <% end %>
+    </div>
+</body>

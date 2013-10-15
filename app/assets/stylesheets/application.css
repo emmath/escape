@@ -1,13 +1,118 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+/* imports */
+@import url(http://fonts.googleapis.com/css?family=Brawler:400,700|Lobster:400,700);
+
+/* Page */
+body {
+  font-family: "Brawler", Georgia, sans-serif;
+}
+
+h1 {
+  font-family: "Lobster", Helvetica, serif;
+}
+
+.flash {
+    padding: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: red;
+}
+
+/* Different backgrounds per page */
+body.index {
+  background:url(road.jpg);
+}
+body.city {
+  background:url(city.jpg);
+}
+body.deals {
+  background:url(ocean.jpg);
+}
+
+/* index styling*/
+#welcome {
+  top: 20%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+}
+  #citypath {
+    float: left;
+    margin-left: 10%;
+    border: 10px solid black;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+  }
+  #dealspath {
+    float: right;
+    margin-right: 10%;
+    border: 10px solid black;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+  }
+
+/* path styling*/
+
+#dealstitle, #citytitle h1{
+  font-size: 50px;
+  text-align: center;
+}
+  #citytitle em {
+  font-family: "Brawler", Georgia, sans-serif;
+  }
+#dealstitle, #citytitle h2 {
+  font-size: 25px;
+  text-align: center;
+}
+#dealsbody, #citybody {
+  font-size: 20px;
+  font-family: "Brawler", Georgia, sans-serif;
+}
+#citybody table {
+  width: 75%;
+  margin-left: 12%;
+  border: 10px solid black;
+  background: rgba(255, 255, 255, 0.5);
+}
+#dealsbody table {
+  width: 75%;
+  margin-left: 12%;
+  border: 10px solid black;
+  background: rgba(255, 255, 255, 0.5);
+}
+#citybody thead {
+  text-align: center;
+  font-style: bold;
+  font-size: 20px;
+}
+#dealsbody thead {
+  text-align: center;
+  font-style: bold;
+  font-size: 20px;
+}
+#citybody td {
+  font-size: 15px;
+  font-style: italic;
+}
+#dealsbody td {
+  font-size: 15px;
+  font-style: italic;
+}
+#citybody tr.price {
+  text-align: center;
+  font-style: bold;
+  color: red;
+  font-size: 20px;
+}
+#dealsbody tr.price {
+  text-align: center;
+  font-style: bold;
+  color: red;
+  font-size: 20px;
+}
+#newcity {
+  margin-top: 70px;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+}
