@@ -2,24 +2,24 @@
 
  <div id="dealstitle">
  <h1>Check it out!</h1>
- <h2>These are the cheapest rooms around the world for tonight:</h2>
+ <h2>These are the lowest-price rooms around the world for tonight:</h2>
 </div>
 
     <div id="dealsbody">
-     <% @price.each do |f| %>
+     <% @price.each do |show| %>
         <table>
             <thead>
             <tr>
                 <th></th>
-                <th><%= f["name"] %>, <%= f["longDestinationName"] %></th>
+                <th><%= show["name"] %>, <%= show["longDestinationName"] %></th>
             </tr>
             </thead>
-                <td><img src="<%= f["imageUrl"] %>" height="100" width="100"></td>
-                <td><%= f["description"] %></td>
+                <td><img src="<%= show["imageUrl"] %>" height="100" width="100"></td>
+                <td><%= show["description"] %></td>
             </tr>
             <tr class="price">
                 <td></td>
-                <td>Price: $<%= f["pricePerNight"] %> each night!</td>
+                <td>Price: $<%= show["pricePerNight"] %> each night!</td>
             </tr>
         </table>
       <% end %>

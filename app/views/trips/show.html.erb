@@ -4,22 +4,22 @@
 </div>
 
 <div id="citybody">
- <% @city.each do |f| %>
+ <% @city.each do |show| %>
 
     <table>
         <thead>
         <tr>
             <th></th>
-            <th><%= f["name"] %></th>
+            <th><%= show["name"] %>, <%= show["starRating"] %> stars</th>
         </tr>
         </thead>
         <tr>
-            <td><img src="<%= f["imageUrl"] %>" height="100" width="100"></td>
-            <td><%= f["description"] %></td>
+            <td><img src="<%= show["imageUrl"] %>" height="100" width="100"></td>
+            <td><%= show["description"] %></td>
         </tr>
         <tr class="price">
             <td></td>
-            <td>Price: $<%= f["pricePerNight"] %> each night!</td>
+            <td>Price: $<%= show["pricePerNight"] %> each night!</td>
         </tr>
     </table>
   <% end %>
